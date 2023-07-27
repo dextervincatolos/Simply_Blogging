@@ -390,25 +390,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      
-    
-        // Function to toggle the content visibility
-        function readmore(button) {
-            let content = document.getElementById("post_"+button.id);
-            let isContentExpanded = content.getAttribute("data-expanded") === "true";
-
-            if (isContentExpanded) {
-            content.style.maxHeight = "200px"; 
-            button.textContent = "Read more";
-            } else {
-                console.log("post_"+button.id);
-            content.style.maxHeight = "none";
-            button.textContent = "Read less";
-            }
-            content.setAttribute("data-expanded", !isContentExpanded);
-        }
-
-
-    </script>
+    <script src="blog.js"> </script>
 </html>
