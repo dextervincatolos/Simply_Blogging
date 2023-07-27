@@ -5,40 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            body{
-                background-color: azure;
-            }
-            .blog-post{
-                max-height: 200px; /* Adjust the height as per your requirements */
-                overflow: hidden;
-            }
-
-            /* Remove default button styles */
-            button {
-            border: none;
-            background: none;
-            padding: 0;
-            cursor: pointer;
-            color: blue; /* Change the color as per your preference */
-            text-decoration: underline; /* Add underline to mimic anchor tag */
-            }
-
-            /* Remove the outline when the button is clicked */
-            button:focus {
-            outline: none;
-            }
-
-            /* Optional: Remove the underline on hover */
-            button:hover {
-            text-decoration: none;
-            }
-
-            .indented-paragraph {
-  text-indent: 30px; /* Adjust the value as needed for your desired indentation */
-}
-
-        </style>
+        <link rel="stylesheet" href="blog.css">
     </head>
     <body >
         
@@ -161,6 +128,7 @@
             </div>
             <div class="col-md-12 row">
                 <div class="col-md-10">
+                    <!--News and Updates-->
                     <section>
                         <h2 class="text-primary">News and Updates:</h2>
                         <hr>
@@ -209,6 +177,8 @@
                         <button id="NU_read-more1" onclick="readmore(this)">Read more</button>
                         <hr>
                     </section>
+                    <!--News and Updates-->
+                    <!--Articles-->
                     <section>
                         <h2 class="text-primary">Articles:</h2>
                         <hr>
@@ -266,6 +236,8 @@
                         <button id="Article_read-more2" onclick="readmore(this)">Read more</button>
                         <hr>
                     </section>
+                    <!--Articles-->
+                    <!--Announcements-->
                     <section>
                         <h2 class="text-primary">Announcements:</h2>
                         <hr>
@@ -319,6 +291,7 @@
                         <button id="Announcements_read-more1" onclick="readmore(this)">Read more</button> 
                         <hr> 
                     </section>
+                    <!--Announcements-->
                     
 
                 </div>
@@ -426,7 +399,7 @@
             let isContentExpanded = content.getAttribute("data-expanded") === "true";
 
             if (isContentExpanded) {
-            content.style.maxHeight = "150px"; 
+            content.style.maxHeight = "200px"; 
             button.textContent = "Read more";
             } else {
                 console.log("post_"+button.id);

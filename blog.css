@@ -1,0 +1,26 @@
+body{
+    background-color: azure;
+}
+.blog-post{
+    max-height: 200px;
+    overflow: hidden;
+}
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    color: blue; 
+    text-decoration: underline;
+}
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+.indented-paragraph {
+    text-indent: 30px; /* Adjust the value as needed for your desired indentation */
+}
