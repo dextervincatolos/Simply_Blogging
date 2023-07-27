@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body{
+                background-color: azure;
+            }
+            .blog-post{
+                max-height: 200px; /* Adjust the height as per your requirements */
+                overflow: hidden;
+            }
+
+            /* Remove default button styles */
+            button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            color: blue; /* Change the color as per your preference */
+            text-decoration: underline; /* Add underline to mimic anchor tag */
+            }
+
+            /* Remove the outline when the button is clicked */
+            button:focus {
+            outline: none;
+            }
+
+            /* Optional: Remove the underline on hover */
+            button:hover {
+            text-decoration: none;
+            }
+
+            .indented-paragraph {
+  text-indent: 30px; /* Adjust the value as needed for your desired indentation */
+}
+
+        </style>
+    </head>
+    <body >
+        
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3" >
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 text-danger">DC_Tech</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark row">
+                            <div class="col-md-6 px-0">
+                            <h1 class="display-4 fst-italic">Navigating the Future of Technology with DC_Tech</h1>
+                            <p class="lead my-3">In an era of rapid technological advancement, staying at the forefront of innovation is crucial for businesses looking to thrive in the digital landscape.</p>
+                            </div>
+                            <div class="col-md-6">
+                            <img src="images/3.jpg" alt="" height="100%" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark row" >
+                            <div class="col-md-7 px-0">
+                            <h1 class="display-4 fst-italic">Groundbreaking Innovations in Technology for a Smarter Future</h1>
+                            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+                            
+                            </div>
+                            <div class="col-md-5">
+                                <img src="images/2.jpg" alt="" height="100%" width="100%">
+                                </div>
+                        </div>
+                       
+                    </div>
+                    <div class="carousel-item">
+                        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark  row">
+                            <div class="col-md-6 px-0">
+                            <h1 class="display-4 fst-italic">Building the Digital World Brick by Brick</h1>
+                            <p class="lead my-3">In the dynamic realm of technology, web development stands as one of the most crucial pillars that have driven the growth of the digital world.</p>
+                           
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/1.jpg" alt="" height="90%" width="100%">
+                                </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
+           
+            <h2 class="text-primary">Featured Posts:</h2>
+            <br>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Evolution of Web Development:</h3>
+                    <p class="blog-post-meta">July 24, 2023 by <a href="#">Ritz Vonn</a></p>
+                    <p class="card-text mb-auto">In the dynamic realm of technology, web development stands as one of the most crucial pillars ...</p>
+                    <a href="#post_Article_read-more1" class="stretched-link">Read Article</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Future of Technology with DC_Tech</h3>
+                    <p class="blog-post-meta">July 24, 2023 by <a href="#">Drake Ashford</a></p>
+                    <p class="mb-auto">DC_Tech, a leading technology solutions company. In this exclusive interview, DC_Tech's team of experts shares their perspectives on emerging...</p>
+                    <a href="#post_Article_read-more2" class="stretched-link">Read Article</a>
+                    </div>
+                   
+                </div>
+                </div>
+            </div>
+            <div class="col-md-12 row">
+                <div class="col-md-10">
+                    <section>
+                        <h2 class="text-primary">News and Updates:</h2>
+                        <hr>
+                        <article class="blog-post" id="post_NU_read-more1" data-expanded="false">
+                            <h3 class="blog-post-title">DC_Tech Announces Groundbreaking Innovations in Technology for a Smarter Future</h3>
+                            <p class="blog-post-meta">July 28, 2023 by <a href="#">Admin</a></p>
+                    
+                            <p> FOR IMMEDIATE RELEASE </p>
+                            <p> <b> DC_Tech Announces Groundbreaking Innovations in Technology for a Smarter Future </b></p>
+                            <p>
+                               DC_Tech, a leading technology solutions company, is proud to unveil its latest advancements that are set to revolutionize the way we interact with technology. With a commitment to driving innovation and empowering businesses for a brighter future, DC_Tech is at the forefront of shaping the digital landscape.
+                                <br>
+                                <ul>
+                                    <li>
+                                        <b> Introducing DC_Tech AI: Redefining Possibilities with Artificial Intelligence </b>
+                                        <p>
+                                            DC_Tech's team of experts has been hard at work, developing cutting-edge AI solutions to meet the evolving needs of businesses across industries. DC_Tech AI leverages the power of machine learning algorithms to streamline processes, analyze data efficiently, and offer predictive insights that fuel smarter decision-making. From personalized customer experiences to optimized supply chain management, DC_Tech AI is paving the way for unparalleled efficiency and growth.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <b> Next-Gen Cloud Services: Scaling Your Business with Ease</b>
+                                        <p>
+                                            Recognizing the importance of cloud computing in today's dynamic business environment, DC_Tech proudly presents its enhanced cloud services. With a focus on security, scalability, and seamless integration, DC_Tech's cloud solutions empower businesses to accelerate their digital transformation journey. The revamped cloud infrastructure ensures increased uptime, enhanced data protection, and effortless collaboration for teams working remotely or across multiple locations.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <b> Powering the Internet of Things (IoT) Revolution </b>
+                                        <p>
+                                            As IoT continues to reshape industries, DC_Tech remains at the forefront, delivering IoT solutions that drive innovation and operational efficiency. Our latest IoT devices and platforms enable businesses to monitor, manage, and optimize assets and processes in real-time. From smart factories to connected cities, DC_Tech's IoT expertise is helping organizations harness the potential of a connected world.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <b>About DC_Tech:</b>
+                                <br><br>
+                                <p>
+                                    DC_Tech is a trailblazing technology solutions company, committed to empowering businesses with innovative and future-ready technology. With a dedicated team of experts and a customer-centric approach, DC_Tech delivers state-of-the-art solutions that drive growth, efficiency, and transformation for businesses worldwide.
+                                    <br><br>
+                                    For media inquiries and further information, please contact: <br><br>
+                                    DC_Tech admin <br>
+                                    Public Relations Manager <br>
+                                    Email: pr@dc_tech.com <br>
+                                    Phone: +1 (555) 123-4567
+                                </p>
+                            </p>
+                        </article>
+                        <button id="NU_read-more1" onclick="readmore(this)">Read more</button>
+                        <hr>
+                    </section>
+                    <section>
+                        <h2 class="text-primary">Articles:</h2>
+                        <hr>
+                        <article class="blog-post" id="post_Article_read-more1" data-expanded="false">
+                            <h3 class="blog-post-title">The Evolution of Web Development: Building the Digital World Brick by Brick</h3>
+                            <p class="blog-post-meta">July 24, 2023 by <a href="#">Ritz Vonn</a></p>
+                    
+                            <p  class="indented-paragraph">
+                                In the dynamic realm of technology, web development stands as one of the most crucial pillars that have driven the growth of the digital world. From the early days of simple static pages to today's interactive and immersive web applications, the journey of web development has been nothing short of remarkable. In this blog post, we will delve into the evolution of web development, exploring the key technologies, trends, and best practices that have shaped the modern web landscape.
+                            </p>
+                            <p class="indented-paragraph">
+                                With the increasing complexity and interconnectedness of web applications, security and privacy have become paramount concerns in web development. Cybersecurity threats, data breaches, and privacy infringements have the potential to cause significant harm to users and businesses alike. As a result, web developers are continuously implementing robust security measures, such as encryption protocols, secure authentication methods, and regular vulnerability assessments to safeguard sensitive information and maintain user trust.
+                            </p>
+                            
+                        </article>
+                        <button id="Article_read-more1" onclick="readmore(this)">Read more</button>
+                        <hr>
+                        <article class="blog-post" id="post_Article_read-more2" data-expanded="false">
+                            <h3 class="blog-post-title">Expert Insights: Navigating the Future of Technology with DC_Tech</h3>
+                            <p class="blog-post-meta">June 24, 2023 by <a href="#">Drake Ashford</a></p>
+                    
+                            <p class="indented-paragraph">
+                                In an era of rapid technological advancement, staying at the forefront of innovation is crucial for businesses looking to thrive in the digital landscape. To gain deeper insights into the future of technology and its impact on industries, we reached out to the experts at DC_Tech, a leading technology solutions company. In this exclusive interview, DC_Tech's team of experts shares their perspectives on emerging trends, the role of AI and IoT, cybersecurity challenges, and how businesses can leverage technology to drive growth and transformation.
+                                <ul>
+                                    <li>
+                                        Embracing AI and Machine Learning:
+                                        <p>
+                                            According to [Expert's Name], Chief Technology Officer at DC_Tech, "Artificial Intelligence and Machine Learning are no longer buzzwords; they are transforming how businesses operate. From automating mundane tasks to analyzing vast amounts of data, AI empowers organizations to make data-driven decisions, streamline processes, and improve overall efficiency." 
+                                        </p>
+                                        <p>
+                                            The experts at DC_Tech believe that businesses that successfully integrate AI into their operations will gain a competitive edge, unlock new revenue streams, and create more personalized experiences for their customers. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        IoT: The Key to a Connected Future:
+                                        <p>
+                                        [Expert's Name], IoT Solutions Architect at DC_Tech, emphasizes the significance of the Internet of Things (IoT) in shaping the future. "IoT is bridging the physical and digital worlds, enabling real-time monitoring and control of assets. This technology revolutionizes industries like manufacturing, agriculture, and healthcare, improving operational efficiency and enhancing decision-making." 
+                                        </p>
+                                        <p>
+                                            DC_Tech's experts assert that IoT's potential lies not just in data collection but also in deriving actionable insights, predictive maintenance, and creating smarter, interconnected systems. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Cybersecurity: A Top Priority:
+                                        <p>
+                                            As technology evolves, so do cybersecurity threats. [Expert's Name], Chief Security Officer at DC_Tech, highlights the importance of robust cybersecurity measures. "Cyberattacks are becoming more sophisticated, targeting businesses of all sizes. It is essential for companies to adopt a proactive approach, implementing comprehensive security solutions, conducting regular audits, and educating employees to prevent breaches."
+                                        </p>
+                                        <p>
+                                            DC_Tech's experts emphasize that cybersecurity is not just a one-time investment but an ongoing commitment to safeguarding data and preserving trust with customers. 
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </article>
+                        <button id="Article_read-more2" onclick="readmore(this)">Read more</button>
+                        <hr>
+                    </section>
+                    <section>
+                        <h2 class="text-primary">Announcements:</h2>
+                        <hr>
+                        <article class="blog-post" id="post_Announcements_read-more1" data-expanded="false">
+                            <h3 class="blog-post-title">DC_Tech Unveils Next-Generation Cloud Services for Enhanced Business Growth</h3>
+                            <p class="blog-post-meta">July 24, 2023 by <a href="#">Admin</a></p>
+                            <p> FOR IMMEDIATE RELEASE </p>
+                            <p><b>DC_Tech Unveils Next-Generation Cloud Services for Enhanced Business Growth</b></p>
+                            <p>
+                                DC_Tech, a trailblazing technology solutions company, is proud to announce the launch of its next-generation cloud services, ushering in a new era of scalability, efficiency, and innovation for businesses worldwide. With a steadfast commitment to empowering organizations for a smarter future, DC_Tech's enhanced cloud offerings are designed to meet the evolving needs of modern enterprises. 
+                            </p>
+                            <p class="indented-paragraph">
+                                As businesses continue to embrace digital transformation, the demand for robust and flexible cloud solutions has never been greater. With DC_Tech's advanced cloud services, companies can harness the power of the cloud to drive growth and stay ahead in the ever-changing technology landscape.
+                                <ul>
+                                    <li>
+                                       <p><b>Seamless Scalability:</b> DC_Tech's cloud infrastructure allows businesses to scale their resources up or down effortlessly, ensuring optimal performance even during peak demand periods. Whether it's handling sudden spikes in website traffic or accommodating data-intensive workloads, our cloud services deliver the required flexibility to match your business needs.</p> 
+                                    </li>
+                                    <li>
+                                        <p> <b>Enhanced Security:</b>  Security remains a top priority at DC_Tech. Our cloud services incorporate state-of-the-art encryption protocols and multi-layered security measures to safeguard your critical data and protect against cyber threats. Businesses can operate with confidence, knowing that their assets are in safe hands.</p> 
+                                    </li>
+                                    <li>
+                                        <p><b>Improved Performance:</b> DC_Tech's cloud infrastructure is designed for lightning-fast performance. With high-speed data access and minimal latency, businesses can optimize application performance and deliver seamless user experiences.</p> 
+                                    </li>
+                                    <li>
+                                        <p><b>Collaborative Workflows:</b> Our cloud services enable seamless collaboration among team members, regardless of their geographical locations. Real-time data sharing, document collaboration, and cloud-based communication tools foster productivity and teamwork, even in remote work environments.</p> 
+                                    </li>
+                                    <li>
+                                        <p><b>Cost-Effective Solutions:</b> DC_Tech's cloud services offer competitive pricing models, ensuring that businesses can efficiently manage their IT budgets while benefiting from cutting-edge cloud technology.</p> 
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                "At DC_Tech, we are committed to driving innovation and providing our clients with the tools they need to thrive in the digital age," said [CEO/Founder Name], CEO of DC_Tech. "Our next-generation cloud services represent a significant step forward in our mission to empower businesses with transformative technology solutions."
+                            </p>
+                            <p>
+                                To learn more about DC_Tech's next-generation cloud services and how they can elevate your business operations, please visit [Company Website].
+                            </p>
+
+                            <p><b> About DC_Tech: </b></p>
+                            <p>
+                                DC_Tech is a leading technology solutions company, dedicated to empowering businesses with innovative and future-ready technology. With a customer-centric approach and a team of industry experts, DC_Tech delivers cutting-edge solutions that drive growth, efficiency, and transformation for businesses across the globe.
+                            </p>
+                            <p> For media inquiries and further information, please contact: </p>
+                            <p>
+                                DC_Tech admin <br>
+                                Public Relations Manager <br>
+                                Email: pr@dc_tech.com <br>
+                                Phone: +1 (555) 123-4567
+                            </p>
+                        </article>  
+                        <button id="Announcements_read-more1" onclick="readmore(this)">Read more</button> 
+                        <hr> 
+                    </section>
+                    
+
+                </div>
+                <div class="col-md-2">
+                    <div class="p-4 ">
+                        <h4 class="fst-italic">See also:</h4>
+                        <ol class="list-unstyled mb-0 text-primary">
+                            
+                            <li>
+                                <h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                                        <path d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z"/>
+                                        <path d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z"/>
+                                    </svg>
+                                    All Post
+                                </h6>
+                            </li>
+                            <li> 
+                                <h6 class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+                                        <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+                                    </svg> 
+                                    Announcements
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                        <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                                    </svg>
+                                    News Updates
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                                    </svg>
+                                    Articles
+                                </h6>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="fst-italic">Archives</h4>
+                        <ol class="list-unstyled mb-0">
+                        <li><a href="#">March 2021</a></li>
+                        <li><a href="#">November 2020</a></li>
+                        <li><a href="#">October 2020</a></li>
+                        <li><a href="#">September 2020</a></li>
+                        <li><a href="#">August 2020</a></li>
+                        <li><a href="#">May 2020</a></li>
+                        <li><a href="#">April 2020</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                
+            </div>
+            </div>
+
+
+        </div>
+        <br>
+        <footer class="row" style="padding: 50px; background-color: rgb(226, 238, 247);">
+        <div class="col-md-6">
+            <h4 style="color: red;">DC_Tech <br> <i style="font-size: 15px; color: rgb(247, 21, 21);">Empowering the Digital Future</i></h4><br>
+            <p>#404 Block 7 Lot 6, Notfound st., unknown subdivison <br> barangay1, unknownprovince, country1 <br>+1 (555) 123-4567 <br>support@dc_tech.com.ph</p>
+           
+        </div>
+        <div class="col-md-3"> 
+            <h5>Quick Links</h5>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="col-md-3"> 
+            <h5>Newsletter</h5>
+            <textarea class="form-control" id="" cols="60" rows="2"></textarea><br>
+            <button class="btn btn-sm btn-primary form-control"> 
+                Send  
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                </svg>
+
+
+            </button>
+        </div>
+        </footer>
+    
+          
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      
+    
+        // Function to toggle the content visibility
+        function readmore(button) {
+            let content = document.getElementById("post_"+button.id);
+            let isContentExpanded = content.getAttribute("data-expanded") === "true";
+
+            if (isContentExpanded) {
+            content.style.maxHeight = "150px"; 
+            button.textContent = "Read more";
+            } else {
+                console.log("post_"+button.id);
+            content.style.maxHeight = "none";
+            button.textContent = "Read less";
+            }
+            content.setAttribute("data-expanded", !isContentExpanded);
+        }
+
+
+    </script>
+</html>
